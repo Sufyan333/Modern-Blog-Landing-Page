@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Blog Landing Page</title>
+  
+  <!-- AOS CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">TechBlog</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero container" data-aos="fade-up">
+    <h1>Welcome to TechBlog</h1>
+    <p>Your source for the latest in tech, coding, and AI.</p>
+    <a href="#blogs" class="btn">Explore Blogs</a>
+  </section>
+
+  <!-- Blog Grid Section -->
+  <section id="blogs" class="blog-grid container">
+    <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpLewzSoDFXVA0QN0KmCrfaQpySfmxUNIRdw&s" alt="Tech Trends 2025" />
+      <div class="card-content">
+        <h3>Tech Trends 2025</h3>
+        <p>Discover the latest innovations shaping the future of technology.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNt_g-7y9BnALvcj6SpY0AqMz6OWKhwDco0g&s" alt="Learn JavaScript Fast" />
+      <div class="card-content">
+        <h3>Learn JavaScript Fast</h3>
+        <p>A beginner-friendly guide to mastering JavaScript quickly and efficiently.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh023fqD7OKp2hvBuXUxypD4CYLIOO_CxwWw&s" alt="AI in Daily Life" />
+      <div class="card-content">
+        <h3>AI in Daily Life</h3>
+        <p>Explore how artificial intelligence is transforming our everyday experiences.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer container" data-aos="fade-in">
+    <p>© 2025 TechBlog. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
+</body>
+</html>
